@@ -5,7 +5,7 @@
 
 
 
->POST /stat (Добавить статистику)
+>POST /stats (Добавить статистику)
 
 **params:**
 * date (format: YYYY-MM-DD) [required]
@@ -14,7 +14,7 @@
 * cost
 * clear=1 **Внимание! Этот параметр полностью очистит статистику**
 
->GET /stat (Получить статистику за период времени)
+>GET /stats (Получить статистику за период времени)
 
 **params:**
 * from_date (format: YYYY-MM-DD) [required]
@@ -24,5 +24,5 @@
 
 ### Пример:
 ```
-/stat?form_date=2021-07-13&to_date=2021-07-15&sortBy=clicks|desc&groupBy=date
+/stats?form_date=2021-07-13&to_date=2021-07-15&sortBy=clicks|desc&groupBy=date
 ```
